@@ -5,6 +5,11 @@
  * @package cscreative
  */
 
+// functions.php (add this)
+if ( file_exists( get_template_directory() . '/include/updater.php' ) ) {
+    require_once get_template_directory() . '/include/updater.php';
+}
+
 // Enqueue styles and scripts
 function cscreative_enqueue_styles() {
     // Enqueue main stylesheet
