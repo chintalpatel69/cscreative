@@ -1,0 +1,226 @@
+.page-content {
+  padding: 0 20px 50px; /* add padding to the bottom of the container */
+}
+.findus-section-header-title{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+/* Find Us Section Styles */
+.findus-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 2rem; /* Adds space between elements */
+}
+
+.map-iframe {
+  flex: 1; /* Allows the iframe to grow */
+  min-width: 300px; /* Ensures a minimum width for the iframe */
+}
+
+.map-iframe iframe {
+  width: 100%; /* Ensures iframe takes full width of its container */
+  height: 450px; /* Fixed height for iframe */
+  border-radius: 10px; /* Rounded corners for modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.address-info-sec {
+  flex: 1; /* Allows the address info section to grow */
+  min-width: 300px; /* Ensures a minimum width for the address info */
+}
+
+.address-info-sec div {
+  margin-bottom: 1.5rem; /* Space between address info sections */
+}
+
+.address-info-sec pre {
+  font-weight: bold;
+  margin: 0;
+  color: #333; /* Dark color for better readability */
+}
+
+.address-info-sec p {
+  margin: 0.5rem 0; /* Margin between paragraphs */
+}
+
+.address-info-sec a {
+  color: #d08d6b; /* Rose gold color for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.address-info-sec a:hover {
+  color: #b07d5f; /* Darker rose gold on hover */
+}
+
+/* General Form Container */
+.wpforms-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Title */
+.wpforms-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Labels */
+.wpforms-field-label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.wpforms-field input[type="text"],
+.wpforms-field input[type="email"],
+.wpforms-field input[type="tel"],
+.wpforms-field textarea {
+  width: 80%;
+  padding: 12px 15px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+/* Input Field Focus State */
+.wpforms-field input[type="text"]:focus,
+.wpforms-field input[type="email"]:focus,
+.wpforms-field input[type="tel"]:focus,
+.wpforms-field textarea:focus {
+  outline: none;
+  border-color: #d08d6b;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(208, 141, 107, 0.2);
+}
+
+/* Textarea Field */
+.wpforms-field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.wpforms-submit {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #d08d6b;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.wpforms-submit:hover {
+  background-color: #b07d5f;
+  transform: translateY(-2px);
+}
+
+/* Success/Error Messages */
+.wpforms-confirmation-container-full,
+.wpforms-error-container {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.wpforms-error-container {
+  color: #d9534f;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 480px) {
+  .wpforms-container {
+      padding: 1.5rem;
+  }
+
+  .wpforms-title {
+      font-size: 1.8rem;
+  }
+
+  .wpforms-field-label {
+      font-size: 0.9rem;
+  }
+
+  .wpforms-submit {
+      font-size: 0.9rem;
+  }
+}
+
+/* WPForms Medium Field Styling */
+.wpforms-field-medium {
+  width: 100%; /* Ensures full width responsiveness */
+  max-width: 300px; /* Defines a maximum width for better layout control */
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9; /* Subtle background color */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Light inner shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.wpforms-field-medium:hover {
+  border-color: #d08d6b; /* Highlighted border on hover */
+}
+
+/* Focus Effect */
+.wpforms-field-medium:focus {
+  border-color: #b07d5f;
+  box-shadow: 0 0 0 3px rgba(208, 141, 107, 0.2); /* Outer glow for focus */
+  outline: none; /* Removes default outline */
+}
+
+/* Placeholder Styling */
+.wpforms-field-medium::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Error State */
+.wpforms-field-medium.wpforms-error {
+  border-color: #e74c3c; /* Red border on error */
+  background-color: #fef2f2;
+}
+
+.wpforms-field-medium.wpforms-error::placeholder {
+  color: #e74c3c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .wpforms-field-medium {
+      width: 100%; /* Full-width on smaller screens */
+      max-width: 100%;
+      font-size: 0.9rem; /* Slightly smaller text for compactness */
+  }
+}

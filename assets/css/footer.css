@@ -1,0 +1,130 @@
+/* General Reset and Body Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes up full height */
+    box-sizing: border-box;
+}
+.page-content{
+    padding-bottom: 50px;
+}
+.socials {
+    display: block;
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    border-radius: 25%;
+    z-index: 1;
+}
+.footer-logo-stamp {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    opacity: 40%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+img.footer-sticky-logo {
+    height: 100px;
+    width: 100px;
+}
+
+/* Footer Styles */
+.sticky-footer {
+    background-color: #513924; /* Darker background for a modern touch */
+    color: #fff;
+    padding: 0; /* Padding for spacing */
+    text-align: center;
+    position: fixed; /* Fixed position to stick it at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #444; /* Border to separate from content */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.footer-container {
+    max-width: 1200px; /* Max width for better layout on large screens */
+    margin: 0 auto; /* Center align the container */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Copyright Text */
+.sticky-footer .copyright {
+    font-size: 14px; /* Base font size */
+    margin: 0;
+}
+
+.footer-text{
+    font-size: 14px;
+}
+
+.sticky-footer .copyright a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.sticky-footer .copyright a:hover {
+    color: #ffcc00; /* Gold text on hover */
+}
+
+/* Responsive Footer Styles */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .sticky-footer {
+        padding: 2px 0; /* Adjust padding for smaller screens */
+    }
+
+    .sticky-footer .copyright {
+        font-size: 13px; /* Slightly smaller font for tablets */
+    }
+
+    .footer-text{
+        font-size: 13px;
+    }
+
+    img.footer-sticky-logo {
+        height: 170px;
+        width: 170px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .sticky-footer {
+        padding: 2px 0; /* Increase padding for smaller screens */
+    }
+
+    .sticky-footer .copyright {
+        font-size: 12px; /* Smaller font size for mobiles */
+    }
+    .footer-text{
+        font-size: 12px;
+    }
+    img.footer-sticky-logo {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* For very small devices (e.g., smartphones in portrait mode) */
+@media (max-width: 480px) {
+    .sticky-footer {
+        padding: 2px 0; /* Further increase padding for very small screens */
+    }
+
+    .sticky-footer .copyright {
+        font-size: 11px; /* Smallest font size for very small screens */
+    }
+    .footer-text{
+        font-size: 11px;
+    }
+    img.footer-sticky-logo {
+        height: 100px;
+        width: 100px;
+    }
+}

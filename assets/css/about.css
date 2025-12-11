@@ -1,0 +1,76 @@
+/* Page Content Styles */
+.page-content {
+  padding: 0 20px 50px; /* Add padding to the bottom and some horizontal padding */
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+
+/* Services Container */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between service boxes */
+}
+
+/* Service Box Styles */
+.service-box {
+  flex: 1 1 calc(25% - 40px); /* Responsive width with margin taken into account */
+  background-color: #f9f9f9; /* Slightly lighter background for a modern look */
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners for a modern touch */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.service-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+.service-box h3 {
+  font-size: 1.2rem; /* Responsive font size */
+  margin: 10px 0;
+  color: #333; /* Darker text color for better readability */
+}
+
+.service-box p {
+  font-size: 0.875rem; /* Slightly smaller font size for a cleaner look */
+  color: #666;
+  margin: 0; /* Remove bottom margin for consistency */
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .service-box {
+      flex: 1 1 calc(33.333% - 40px); /* Adjust width for medium screens */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .service-box {
+      flex: 1 1 calc(50% - 40px); /* Adjust width for mobile screens */
+  }
+}
+
+/* For very small devices (e.g., smartphones in portrait mode) */
+@media (max-width: 480px) {
+  .service-box {
+      flex: 1 1 100%; /* Full width for very small screens */
+  }
+}

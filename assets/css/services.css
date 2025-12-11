@@ -1,0 +1,104 @@
+.page-content {
+    padding: 0 20px 50px; /* add padding to the bottom of the container */
+    text-align: center;
+  }
+
+  /* Container for services */
+.services {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap if they exceed container width */
+    justify-content: center; /* Center-align items horizontally */
+    gap: 20px; /* Add space between items */
+    padding-bottom: 10px;
+}
+
+/* Service Box Styles */
+.service-box {
+    padding: 10px !important;
+    height: auto; /* Adjust height to fit content */
+    width: 300px; /* Adjust width as needed */
+    max-width: 100%; /* Allow full width within container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.service-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+.services-image img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px; /* Fixed height for image to maintain consistency */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Title and excerpt styles */
+.services-title {
+    font-size: 1.25em;
+    max-width: 250px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.services-excerpt {
+    font-size: 14px;
+    max-width: 250px;
+    color: #666;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.text-block.long-text {
+    display: block; /* Ensure the block is displayed */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller desktops */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .page-content {
+        padding-bottom: 30px; /* Adjust bottom padding for smaller screens */
+    }
+
+    .services {
+        gap: 15px; /* Adjust space between items for smaller screens */
+    }
+}
+
+/* For mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .page-content {
+        padding-bottom: 20px; /* Further adjust bottom padding */
+    }
+
+    .services {
+        gap: 10px; /* Adjust space between items for very small screens */
+    }
+
+    .service-box {
+        width: 100%; /* Ensure boxes are full width */
+        max-width: none; /* Remove max-width for small screens */
+    }
+}

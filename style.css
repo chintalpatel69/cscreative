@@ -1,0 +1,18 @@
+/*
+Theme Name: CS Creative Salon
+Description: A custom WordPress theme created for CS Creative Saloon.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cscreative
+Author: CharlyKingsta
+*/
+
+/* Poppins Font include for webpages */
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('assets/fonts/poppins.regular.ttf') format('ttf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }

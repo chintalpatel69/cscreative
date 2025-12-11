@@ -1,0 +1,200 @@
+/* General Styles for Single Post Content */
+.single-post-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.single-post-content h1 {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    color: #222;
+    text-align: center;
+    font-weight: bold;
+}
+
+.featured-image{
+    text-align-last: center;
+}
+
+.single-post-content article {
+    margin-bottom: 50px;
+}
+
+p .post-excerpt{
+    text-align: center;
+}
+
+.single-post-content article.post {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 25px;
+}
+
+.single-post-content article:last-child {
+    border-bottom: none;
+}
+
+.single-post-content div {
+    font-size: 1.15em;
+    line-height: 1.8em;
+    color: #555;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.single-post-content p {
+    margin-bottom: 25px;
+}
+
+.single-post-content a {
+    color: #0056b3;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.single-post-content a:hover {
+    color: #003d80;
+    border-bottom: 2px solid #003d80;
+}
+
+/* Image Styles */
+.single-post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 1px;
+    margin: 50px 0;
+}
+
+/* Each item takes only the space needed */
+.nav-previous,
+.nav-home,
+.nav-next {
+    flex: 1;
+}
+
+/* Alignment */
+.nav-previous,
+.nav-home,
+.nav-next {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-previous {
+    justify-content: flex-start;
+}
+
+.nav-home {
+    justify-content: center;
+}
+
+.nav-next {
+    justify-content: flex-end;
+}
+
+/* Links */
+.post-navigation a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.post-navigation a:hover {
+    color: #fff;
+    background: #333;
+}
+
+/* ------- Responsive -------- */
+@media (max-width: 600px) {
+    .post-navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-previous,
+    .nav-home,
+    .nav-next {
+        text-align: center !important;
+        width: 100%;
+    }
+    
+    .post-navigation a {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .single-post-content {
+        padding: 20px;
+    }
+
+    .single-post-content h1 {
+        font-size: 2.4em;
+    }
+
+    .single-post-content div {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-post-content {
+        padding: 18px;
+    }
+
+    .single-post-content h1 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+
+    .single-post-content div {
+        font-size: 1.05em;
+        line-height: 1.7em;
+    }
+
+    .single-post-content img {
+        margin: 25px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .single-post-content {
+        padding: 15px;
+    }
+
+    .single-post-content h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .single-post-content div {
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+
+    .single-post-content img {
+        margin: 20px 0;
+    }
+}

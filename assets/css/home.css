@@ -1,0 +1,465 @@
+/* Page Content Styles */
+.page-content {
+    text-align: center;
+    background: linear-gradient(to left, #ffffff, #f5d7a4);
+    }
+
+/* Container for services */
+.services {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap if they exceed container width */
+    justify-content: center; /* Center-align items horizontally */
+    gap: 20px; /* Add space between items */
+    padding-bottom: 10px;
+}
+
+/* Service Box Styles */
+.service-box {
+    /* background-color: #ffffff; */
+    padding: 10px;
+    height: auto; /* Adjust height to fit content */
+    width: 300px; /* Adjust width as needed */
+    max-width: 100%; /* Allow full width within container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.service-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+.services-image img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px; /* Fixed height for image to maintain consistency */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Title and excerpt styles */
+.services-title {
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a .services-title{
+    text-decoration: none;
+}
+
+.services-excerpt {
+    font-size: 14px;
+    max-width: 250px;
+    color: #666;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-decoration: none;
+}
+
+/* Container for featured posts */
+.posts {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap if they exceed container width */
+    justify-content: center; /* Center-align items horizontally */
+    gap: 20px; /* Add space between items */
+    padding-bottom: 10px;
+}
+
+/* post Box Styles */
+.post-box {
+    padding: 10px;
+    height: auto; /* Adjust height to fit content */
+    width: 300px; /* Adjust width as needed */
+    max-width: 100%; /* Allow full width within container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.post-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+.posts-image img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px; /* Fixed height for image to maintain consistency */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Title and excerpt styles */
+.posts-title {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.posts-excerpt {
+    font-size: 14px;
+    max-width: 250px;
+    color: #666;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.text-block.long-text {
+    display: block; /* Ensure the block is displayed */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Custom Slider CSS */
+.custom-slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    max-width: 100%; /* Ensure slider doesn’t exceed container width */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners for a modern touch */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.button {    
+    position: fixed;
+    display: block;
+    right: 46%;
+    top: 44%;
+    opacity: 90%;
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: black; /* Replace with hover color */
+}
+
+/* Slider Container */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+/* Individual Slide */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    height: auto; /* Adjust height based on content */
+}
+
+/* Slide Image */
+.slide img {
+    width: 100%;
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: fill;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Caption Styles */
+.caption {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    max-width: 90%;
+    box-sizing: border-box;
+    border-radius: 4px; /* Rounded corners for captions */
+}
+
+/* Navigation buttons */
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px; /* Larger font size for better visibility */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%; /* Circular buttons */
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+.prev-slide:hover, .next-slide:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+/* Pagination dots */
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Show navigation buttons and dots on hover */
+.custom-slider:hover .prev-slide,
+.custom-slider:hover .next-slide,
+.custom-slider:hover .dot {
+    opacity: 0.1;
+}
+
+/* Responsive Design */
+@media(max-width:1027px){
+
+    p{
+        font-size: 12px !important;
+    }
+    .service-box{
+        padding: 2px;
+    }
+}
+/* For tablets and smaller desktops */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .page-content {
+        padding-bottom: 30px; /* Adjust bottom padding for smaller screens */
+    }
+
+    .services {
+        gap: 15px; /* Adjust space between items for smaller screens */
+    }
+
+    .posts {
+        gap: 15px; /* Adjust space between items for smaller screens */
+    }
+
+    .custom-slider {
+        height: 200px; /* Adjust height for slider on tablets */
+    }
+
+    .prev-slide, .next-slide {
+        font-size: 20px; /* Slightly smaller font size for navigation buttons */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    .dot {
+        width: 10px; /* Smaller dots for pagination */
+        height: 10px;
+        margin: 0 3px;
+    }
+}
+
+/* For mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .page-content {
+        padding-bottom: 20px; /* Further adjust bottom padding */
+    }
+
+    .services {
+        gap: 10px; /* Adjust space between items for very small screens */
+    }
+
+    .posts {
+        gap: 10px; /* Adjust space between items for very small screens */
+    }
+
+    .service-box {
+        width: 100%; /* Ensure boxes are full width */
+        max-width: none; /* Remove max-width for small screens */
+    }
+
+    .post-box {
+        width: 100%; /* Ensure boxes are full width */
+        max-width: none; /* Remove max-width for small screens */
+    }
+
+    .custom-slider {
+        height: 150px; /* Further adjust height for mobile screens */
+    }
+
+    .prev-slide, .next-slide {
+        font-size: 18px; /* Smaller font size for navigation buttons */
+        padding: 6px; /* Adjust padding for very small screens */
+    }
+
+    .dot {
+        width: 8px; /* Smaller dots for pagination */
+        height: 8px;
+        margin: 0 2px;
+    }
+}
+
+
+
+/* Instagram Feed Container */
+.instagram-feed-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 2rem;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Individual Post Style */
+.instagram-feed-container .instagram-post {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 10px;
+}
+
+.instagram-feed-container .instagram-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects on Post */
+.instagram-feed-container .instagram-post:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.instagram-feed-container .instagram-post:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay for Post Details */
+.instagram-feed-container .instagram-post .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.instagram-feed-container .instagram-post:hover .overlay {
+    opacity: 1;
+}
+
+/* Overlay Text */
+.overlay .likes,
+.overlay .comments {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.overlay .likes:before,
+.overlay .comments:before {
+    font-family: "Font Awesome 5 Free"; /* Assuming Font Awesome is loaded */
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.overlay .likes:before {
+    content: "\f004"; /* Heart icon */
+}
+
+.overlay .comments:before {
+    content: "\f075"; /* Comment icon */
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .instagram-feed-container {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        gap: 8px;
+        padding: 1rem;
+    }
+
+    .instagram-feed-container .instagram-post {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .instagram-feed-container .instagram-post img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image scales within the block */
+        border-radius: 5px;
+    }
+
+    /* Smaller overlay and text */
+    .overlay .likes,
+    .overlay .comments {
+        font-size: 0.9rem;
+    }
+}
